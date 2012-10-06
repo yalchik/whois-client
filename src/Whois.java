@@ -72,7 +72,7 @@ public class Whois {
 			query(domain);
 			close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Connection error!");
 		}
 	}
 }
