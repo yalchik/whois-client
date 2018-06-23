@@ -11,7 +11,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 /**
- * Requests information on a given domain from a given whois-server via WhoisClient protocol (see RFC 954)
+ * This is a whois-client. It connects to a whois-server and requests information about the specified domain.
+ * It uses the NICNAME/WHOIS protocol according to RFC 954.
  * @author Ilya Yalchyk
  */
 public class WhoisClient {
