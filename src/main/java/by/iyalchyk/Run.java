@@ -8,15 +8,15 @@ public class Run {
 
     private static final DomainValidator domainValidator = DomainValidator.getInstance(true);
 
-	/**
-	 * Entry point
-	 * @param args arguments
-	 */
-	public static void main(String[] args) {
+    /**
+     * Entry point
+     * @param args arguments
+     */
+    public static void main(String[] args) {
         if (args.length != 2) {
             System.out.println(String.format("Error: %s\nFormat: %s\nExample: %s",
                     "Wrong input",
-                    "java -jar [filename] [server] [domain]",
+                    "java -cp [classpath] by.iyalchyk.Run [whois-server] [domain_request]",
                     "java -cp target/WhoisClient-1.0-SNAPSHOT.jar by.iyalchyk.Run whois.nic.ru yandex.ru"
             ));
             System.exit(1);
@@ -41,6 +41,6 @@ public class Run {
             System.out.println("Error: network connection issues");
             System.exit(4);
         }
-	}
+    }
 
 }
